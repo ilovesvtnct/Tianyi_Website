@@ -276,6 +276,56 @@ section {
     margin-top: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .activities-page {
+    padding: 1.6rem 1.1rem 2.4rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .subheader {
+    font-size: 0.95rem;
+  }
+
+  .video-grid {
+    flex-direction: column;
+  }
+
+  .youtube-section iframe {
+    width: 100%;
+    height: 210px;
+  }
+
+  .gallery,
+  .volunteer-gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gallery img,
+  .activity-photo {
+    width: 100%;
+    height: 220px;
+  }
+
+  .run-gallery {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .placeholder-card,
+  .tiktok-frame {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tiktok-frame {
+    height: 380px;
+  }
+}
 </style>
 
   

@@ -44,7 +44,7 @@
       </a>
 
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/tianyi-xie-919a02272" target="_blank">
+      <a href="https://www.linkedin.com/in/tian-yi-xie" target="_blank">
         <i class="fa-brands fa-linkedin"></i>
       </a>
 
@@ -337,5 +337,44 @@ body {
   background: #F5E8D0;
   color: #bf874a;
   transform: scale(1.12);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.7rem 1rem;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+  }
+
+  .nav-center {
+    gap: 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .nav-center a {
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  main {
+    margin: 1.5rem 0;
+  }
+
+  .contact-floating {
+    right: 14px;
+    bottom: 18px;
+  }
+
+  .contact-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
 }
 </style>

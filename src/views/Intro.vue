@@ -135,7 +135,7 @@ export default {
   background: #9a6a35;
 }
 
-.hero-image img {
+  .hero-image img {
   width: 340px;
   border-radius: 10px;
   object-fit: cover;
@@ -193,6 +193,59 @@ export default {
   height: 100%;
   background: linear-gradient(90deg, #c08a42, #e1b56b);
   border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem 1.2rem 2.8rem;
+    gap: 1.25rem;
+    background: #fff8eb;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    line-height: 1.15;
+  }
+
+  .hero-text h2 {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    line-height: 1.3;
+    margin-top: 0.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.98rem;
+    max-width: none;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image img {
+    width: 85vw;
+    max-width: 320px;
+    max-height: 50vh;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .skills {
+    padding: 2.5rem 1.2rem 3rem;
+  }
+
+  .skills .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skill span {
+    font-size: 0.95rem;
+  }
 }
 </style>
 

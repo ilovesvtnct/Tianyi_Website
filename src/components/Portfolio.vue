@@ -245,6 +245,70 @@ export default {
   object-fit: contain;
   background: #f3f3f3;
 }
+
+@media (max-width: 900px) {
+  .portfolio-section {
+    padding: 2.4rem 1.2rem 3rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .carousel {
+    gap: 0.6rem;
+  }
+
+  .carousel-window {
+    width: 100%;
+  }
+
+  .slide img {
+    height: 340px;
+  }
+
+  .scroll-panel {
+    height: 340px;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .nav-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel-window {
+    width: 100%;
+  }
+
+  .slide img {
+    height: 300px;
+  }
+
+  .scroll-panel {
+    height: 300px;
+  }
+
+  .nav-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
 </style>
 
   

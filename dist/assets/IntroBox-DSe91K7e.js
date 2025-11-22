@@ -1,0 +1,10 @@
+import{_ as x,c as n,a as h,b as d,d as g,F as u,r as y,o as a,n as _}from"./index-C5t51FTa.js";const f={data(){return{explode:!1,letters:[],interval:null,boxCenter:{x:0,y:0},logosPool:["/media/logos/CRM.png","/media/logos/Market.png","/media/logos/Computer.png","/media/logos/Pen.png","/media/logos/Data.png"]}},methods:{startExplosion(){this.explode=!0,this.computeBoxCenter(),this.generateLettersGradually(),setTimeout(()=>{this.$router.push("/home")},3e3)},computeBoxCenter(){const e=this.$refs.boxImage;if(!e)return;const t=e.getBoundingClientRect();this.boxCenter={x:t.left+t.width/2,y:t.top+t.height*.35}},generateLettersGradually(){this.logosPool.forEach((t,s)=>{this.letters.push(this.randomStyle(t,s*.08))});let e=this.logosPool.length;this.interval=setInterval(()=>{if(e>=90){clearInterval(this.interval);return}this.letters.push(this.randomStyle()),e++},20)},randomStyle(e=null,t=0){const s=Math.random()*360,i=140+Math.random()*420,r=Math.cos(s*Math.PI/180)*i,l=Math.sin(s*Math.PI/180)*i*-1,o=t+Math.random()*.35,c=.8+Math.random()*.9,m=Math.random()*180-90,p=28+Math.random()*18;return{src:e||this.logosPool[Math.floor(Math.random()*this.logosPool.length)],style:`
+        --tx: ${r}px;
+        --ty: ${l}px;
+        --rot: ${m}deg;
+        --logo-size: ${p}px;
+        --start-scale: ${c};
+        left: ${this.boxCenter.x}px;
+        top: ${this.boxCenter.y}px;
+        animation-delay: ${o}s;
+      `}}}},M={class:"intro-screen"},C={src:g,class:"box",ref:"boxImage"},b={key:0,class:"click-hint"},k={key:0,class:"ty-explosion"},v=["src"];function $(e,t,s,i,r,l){return a(),n("div",M,[h("div",{class:"box-wrapper",onClick:t[0]||(t[0]=(...o)=>l.startExplosion&&l.startExplosion(...o))},[h("img",C,null,512),r.explode?d("",!0):(a(),n("p",b,"Click to open"))]),r.explode?(a(),n("div",k,[(a(!0),n(u,null,y(r.letters,(o,c)=>(a(),n("div",{key:c,class:"ty-letter",style:_(o.style)},[h("img",{src:o.src,alt:"burst logo"},null,8,v)],4))),128))])):d("",!0)])}const I=x(f,[["render",$]]);export{I as default};
